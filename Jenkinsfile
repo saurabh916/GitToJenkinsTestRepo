@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               sh "rm -rf TicketBookingServiceJunitTesting"
+                sh "rm -rf TicketBookingServiceJunitTesting"
                 sh "git clone https://github.com/saurabh916/GitToJenkinsTestRepo.git"
                 sh "mvn clean -f TicketBookingServiceJunitTesting"
             }
