@@ -25,7 +25,7 @@ pipeline {
         }
         stage('package') {
             steps {
-                sh "mvn package -f TGitToJenkinsTestRepo"
+                sh "mvn package -f GitToJenkinsTestRepo"
             }
         }
     }
